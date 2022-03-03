@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamically Add Remove Table Rows in JavaScript</title>
+
+    <style>
+        table { width: 70%; }
+        table, th, td { border: solid 1px #DDD;
+            border-collapse: collapse; padding: 2px 3px; text-align: center;
+        }
+    </style>
+</head>
+<body onload="createTable()">
+    <p>
+        <input type="button" id="addRow" value="Add New Row" onclick="addRow()" />
+    </p>
+    <div id="cont"></div>   <!--the container to add the table.-->
+    <p><input type="button" id="bt" value="Submit Data" onclick="submit()" /></p>
+</body>
+
+<script>
+    <table id="tbl">
+    <tr>
+        <td><input type="text" name="links" /></td>
+        <td><input type="text" name="keywords" /></td> 
+        <td><input type="text" name="violationtype" /></td>   
+        <td><input type="submit" class="button" value="Add another line" onclick="addField(this);" /></td>          
+    </tr>
+</table>
+</script>
+</html>
