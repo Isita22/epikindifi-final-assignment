@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Book Club</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <nav class="navigation-bar">
         <div class="page-title">
@@ -12,10 +14,14 @@
         </div>
 
         <div class="logged-in-user-input">
-            <label>
+            <!-- <label>
                 <input id="logged-user" type="text"/>
             </label>
-            <button onclick="changeLoggedInUser()">Log in</button>
+            <button onclick="changeLoggedInUser()">Log in</button> -->
+            <form class="login" id="login">
+                <input class="control" type="text" placeholder="Login">
+                <button class="btn" id="botton" type="submit">Login</button>
+            </form>
         </div>
     </nav>
 
@@ -25,28 +31,28 @@
         </p>
         <table class="book-table" id="info-table">
             <thead>
-            <tr>
-                <th>
-                    Id
-                </th>
-                <th>
-                    Title
-                </th>
-                <th>
-                    Author
-                </th>
-                <th>
-                    Lender
-                </th>
-                <th>
-                    Borrower
-                </th>
-                <th>
-                    Action
-                </th>
-            </tr>
+                <tr>
+                    <th>
+                        Id
+                    </th>
+                    <th>
+                        Title
+                    </th>
+                    <th>
+                        Author
+                    </th>
+                    <th>
+                        Lender
+                    </th>
+                    <th>
+                        Borrower
+                    </th>
+                    <th>
+                        Action
+                    </th>
+                </tr>
             </thead>
-            <tbody>
+            <tbody id="formbody">
                 <tr>
                     <td>1</td>
                     <td>Book1</td>
@@ -95,27 +101,28 @@
                     <td>UserA</td>
                     <td>-</td>
                 </tr>
-                <tr>
-                    <td>7</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>UserC</td>
-                    <td>-</td>
-                    <!-- <td><button id="botton"> Add Book</button></td> -->
-                </tr>
 
             </tbody>
+
+            <tfoot id="addbook">
+                <tr>
+                    <form id='form'>
+                        <td></td>
+                        <!-- <label for="BookName" >BookName: </label> -->
+                        <td><input type="text" id="BookName" name="BookName" placeholder="title"></td>
+                        <!-- <label for="lname">AuthorName: </label> -->
+                        <td><input type="text" id="lname" name="lname" placeholder="author"></td>
+                        <td></td>
+                        <td></td>
+                        <td><input type="submit" value="Add Book"></td>
+                    </form>
+                </tr>
+            </tfoot>
         </table>
-        <form id='form'>
-            <label for="BookName">BookName: </label>
-            <input type="text" id="BookName" name="BookName">
-            <label for="lname">AuthorName: </label>
-            <input type="text" id="lname" name="lname">
-            <input type="submit" value="Add Book">
-          </form>
 
     </section>
 
     <script type="text/javascript" src="library.js"></script>
 </body>
+
 </html>
