@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>Book Club</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <nav class="navigation-bar">
         <div class="page-title">
@@ -14,10 +12,6 @@
         </div>
 
         <div class="logged-in-user-input">
-            <!-- <label>
-                <input id="logged-user" type="text"/>
-            </label>
-            <button onclick="changeLoggedInUser()">Log in</button> -->
             <form class="login" id="login">
                 <input class="control" type="text" placeholder="Login">
                 <button class="btn" id="botton" type="submit">Login</button>
@@ -27,90 +21,41 @@
 
     <section class="content-section">
         <p id="logged-in-user-name">
-
+            
         </p>
         <table class="book-table" id="info-table">
-            <thead>
-                <tr>
-                    <th>
-                        Id
-                    </th>
-                    <th>
-                        Title
-                    </th>
-                    <th>
-                        Author
-                    </th>
-                    <th>
-                        Lender
-                    </th>
-                    <th>
-                        Borrower
-                    </th>
-                    <th>
-                        Action
-                    </th>
-                </tr>
-            </thead>
-            <tbody id="formbody">
-                <tr>
-                    <td>1</td>
-                    <td>Book1</td>
-                    <td>Author1</td>
-                    <td>UserC</td>
-                    <td>UserB</td>
-                    <td>-</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Book2</td>
-                    <td>Author2</td>
-                    <td>UserC</td>
-                    <td>-</td>
-                    <td>-</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Book3</td>
-                    <td>Author3</td>
-                    <td>UserD</td>
-                    <td>UserC</td>
-                    <td>-</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>Book4</td>
-                    <td>Author4</td>
-                    <td>UserA</td>
-                    <td>-</td>
-                    <td>-</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>Book5</td>
-                    <td>Author5</td>
-                    <td>UserA</td>
-                    <td>-</td>
-                    <td>-</td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>Book6</td>
-                    <td>Author6</td>
-                    <td>UserB</td>
-                    <td>UserA</td>
-                    <td>-</td>
-                </tr>
+            <thead id="info-head">
+            <tr>
+                <th>
+                    Id
+                </th>
+                <th>
+                    Title
+                </th>
+                <th>
+                    Author
+                </th>
+                <th>
+                    Lender
+                </th>
+                <th>
+                    Borrower
+                </th>
+                <th>
+                    Action
+                </th>
+            </tr>
+        </thead>
 
-            </tbody>
+        <tbody id="tbody">
 
-            <tfoot id="addbook">
+        </tbody>
+ 
+            <tfoot id="addbook" >
                 <tr>
-                    <form id='form'>
+                    <form id='addbookform'>
                         <td></td>
-                        <!-- <label for="BookName" >BookName: </label> -->
                         <td><input type="text" id="BookName" name="BookName" placeholder="title"></td>
-                        <!-- <label for="lname">AuthorName: </label> -->
                         <td><input type="text" id="lname" name="lname" placeholder="author"></td>
                         <td></td>
                         <td></td>
